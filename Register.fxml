@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Register_controller">
+   <children>
+      <AnchorPane layoutY="-14.0" prefHeight="444.0" prefWidth="572.0">
+         <children>
+            <AnchorPane layoutY="-20.0" prefHeight="121.0" prefWidth="572.0" style="-fx-background-color: #E96151;">
+               <children>
+                  <Label layoutX="164.0" layoutY="51.0" text="User Registration" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="81.0" fitWidth="105.0" layoutX="21.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../OneDrive%20-%20Higher%20Education%20Commission/Desktop/bahria-university-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="81.0" layoutY="128.0" text="Firstname">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="165.0" text="Lastname">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="205.0" text="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="249.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="289.0" prefHeight="20.0" prefWidth="115.0" text="Confirm Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerButton" layoutX="258.0" layoutY="328.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #E96151;" text="Register" />
+            <Button fx:id="closeButton" layoutX="257.0" layoutY="371.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #E96151;" text="Close" />
+            <TextField fx:id="confirmPasswordField" layoutX="258.0" layoutY="284.0" prefHeight="25.0" prefWidth="240.0" promptText="confirm password" />
+            <TextField fx:id="setPasswordField" layoutX="256.0" layoutY="247.0" prefHeight="25.0" prefWidth="240.0" promptText="password" />
+            <TextField fx:id="usernameTextField" layoutX="256.0" layoutY="205.0" prefHeight="25.0" prefWidth="240.0" promptText="username" />
+            <TextField fx:id="lastnameTextField" layoutX="255.0" layoutY="163.0" prefHeight="25.0" prefWidth="240.0" promptText="lastname" />
+            <TextField fx:id="firstnameTextField" layoutX="256.0" layoutY="123.0" prefHeight="25.0" prefWidth="240.0" promptText="firstname" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
